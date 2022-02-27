@@ -14,18 +14,18 @@ elForm.addEventListener("submit", function(evt){
     if (elSelect.value === "EUR")
     {
         natija = elInput.value * 11600;
-        console.log(natija);
+        elResult.innerHTML = (elInput.value + "eur = " + natija + "so'm");
     }
 
     else if (elSelect.value === "USD")
     {
         natija = elInput.value * 10850;
-        console.log(natija);
+        elResult.innerHTML = (elInput.value + "usd = " + natija + "so'm");
     }
-    
+
     else if (elSelect.value === "RUB")
     {
         natija = elInput.value * 130;
-        console.log(natija);
+        elResult.innerHTML = (elInput.value + "rub = " + natija + "so'm");
     }
 })
